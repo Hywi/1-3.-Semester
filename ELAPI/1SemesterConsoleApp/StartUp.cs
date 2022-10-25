@@ -15,15 +15,6 @@ namespace _1SemesterConsoleApp
 
         private string endDate;
 
-        public void LoadGuestList()
-        {
-            StreamReader sr = new StreamReader("..\\..\\..\\..\\..\\..\\..\\..\\..\\bin\\Måledata2år");
-
-            string readFile = sr.ReadLine();
-
-            string[] readFileSplit = readFile.Split(";");
-        }
-
         public void Run()
         {
             bool programOpen = true;
@@ -48,6 +39,24 @@ namespace _1SemesterConsoleApp
                 switch (userChoice)
                 {
                     case 1:
+                        StreamReader sr = new StreamReader("Måledata2år.txt");
+
+                        List<string[]> readFile = new List<string[]>();
+
+                        while (sr.EndOfStream == false)
+                        {
+                            readFile.Add(sr.ReadLine().Split(";"));
+                        }
+
+                        foreach (string[] line in readFile)
+                        {
+                            if (line[0].Length < 2) break;
+                            Console.WriteLine("{0} {1} {2} {3}", line[0], line[1], line[2], line[3]);
+                        }
+                        
+
+                        Console.ReadLine();
+
                         break;
 
                     case 2:
