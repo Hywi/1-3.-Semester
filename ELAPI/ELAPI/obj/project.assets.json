@@ -224,19 +224,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jaco Sørensen\\.nuget\\packages\\": {}
+    "C:\\Users\\olive\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jaco Sørensen\\source\\repos\\ELAPI\\ELAPI\\ELAPI.csproj",
+      "projectUniqueName": "C:\\Users\\olive\\Source\\Repos\\1-3.-Semester\\ELAPI\\ELAPI\\ELAPI.csproj",
       "projectName": "ELAPI",
-      "projectPath": "C:\\Users\\Jaco Sørensen\\source\\repos\\ELAPI\\ELAPI\\ELAPI.csproj",
-      "packagesPath": "C:\\Users\\Jaco Sørensen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jaco Sørensen\\source\\repos\\ELAPI\\ELAPI\\obj\\",
+      "projectPath": "C:\\Users\\olive\\Source\\Repos\\1-3.-Semester\\ELAPI\\ELAPI\\ELAPI.csproj",
+      "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\olive\\Source\\Repos\\1-3.-Semester\\ELAPI\\ELAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jaco Sørensen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -286,7 +286,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
