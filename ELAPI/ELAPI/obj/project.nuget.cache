@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ACepID+qjrrC7Pq0eZkxG1u5+UOr3sV+yWutUKNsX+sQ92jmLkkSjcgPV9O/lN3hWEOsZyGX5ZcJ66fNzIFWCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jaco Sørensen\\source\\repos\\ELAPI\\ELAPI\\ELAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jaco Sørensen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Jaco Sørensen\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Jaco Sørensen\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jaco Sørensen\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jaco Sørensen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jaco Sørensen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
