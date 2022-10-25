@@ -224,19 +224,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maxam\\.nuget\\packages\\": {}
+    "C:\\Users\\vuong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maxam\\OneDrive\\Dokumenter\\Uge 43 Projekt\\1-3.-Semester\\ELAPI\\ELAPI\\ELAPI.csproj",
+      "projectUniqueName": "C:\\Users\\vuong\\Desktop\\Projekter\\projektuge43\\1-3.-Semester\\ELAPI\\ELAPI\\ELAPI.csproj",
       "projectName": "ELAPI",
-      "projectPath": "C:\\Users\\maxam\\OneDrive\\Dokumenter\\Uge 43 Projekt\\1-3.-Semester\\ELAPI\\ELAPI\\ELAPI.csproj",
-      "packagesPath": "C:\\Users\\maxam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maxam\\OneDrive\\Dokumenter\\Uge 43 Projekt\\1-3.-Semester\\ELAPI\\ELAPI\\obj\\",
+      "projectPath": "C:\\Users\\vuong\\Desktop\\Projekter\\projektuge43\\1-3.-Semester\\ELAPI\\ELAPI\\ELAPI.csproj",
+      "packagesPath": "C:\\Users\\vuong\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vuong\\Desktop\\Projekter\\projektuge43\\1-3.-Semester\\ELAPI\\ELAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maxam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
