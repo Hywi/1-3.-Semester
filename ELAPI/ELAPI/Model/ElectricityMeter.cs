@@ -1,6 +1,6 @@
 ﻿namespace ELAPI.Model
 {
-    public class Elmåler
+    public class ElectricityMeter
     {
         public long MeterId { get; set; }
         public DateTime FromDateTime { get; set; }
