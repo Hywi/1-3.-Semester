@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace _1SemesterConsoleApp
 {
-    internal class ElecMeterRepo
+    public class ElecMeterRepo
     {
-        private 
+        private List<ElectricityMeter> _electricityMeters;
+        
+        public double ReadElectricityMeter (DateTime startDate, DateTime endDate)
+        {
+            return ;
+        }
+            
+        
     }
 }

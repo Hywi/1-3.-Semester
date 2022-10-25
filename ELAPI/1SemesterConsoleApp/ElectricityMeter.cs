@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1SemesterConsoleApp
 {
-    internal class ElectricityMeter
+    public class ElectricityMeter
     {
         public long MeterId { get; set; }
 
