@@ -59,12 +59,15 @@ namespace _1SemesterConsoleApp
 
                         foreach (string[] line in readFile)
                         {
-                            if (line[0].Length < 2) break;
+                            if (!long.TryParse(line[0], out _)) continue;
                             //2020-10-23 00,00
                             string format = "yyyy-MM-dd HH,mm";
                             CultureInfo provider = CultureInfo.CreateSpecificCulture("en-US");
-                            meterList.Add(new ElectricityMeter(long.Parse(line[0]), DateTime.ParseExact(line[1], format, provider), DateTime.ParseExact(line[2], format, provider), double.Parse(line[3])));
 
+                            DateTime start = DateTime.ParseExact(line[1], format, provider);
+                            DateTime end = DateTime.ParseExact(line[2], format, provider);
+
+                            meterList.Add(new ElectricityMeter(long.Parse(line[0]), start, end, double.Parse(line[3])));
                         }
 
 
@@ -73,37 +76,20 @@ namespace _1SemesterConsoleApp
                         while (confirm == false)
                         {
                             Console.WriteLine("Søg efter start dato");
-                            string line1Compare = Console.ReadLine();
+                            string start = Console.ReadLine();
 
-                            int i;
-                            int j;
+                            string format = "yyyy-MM-dd HH,mm";
+                            CultureInfo provider = CultureInfo.CreateSpecificCulture("en-US");
+                            DateTime startDate = DateTime.ParseExact(start, format, provider);
 
-                            for (i = 0; i < readFile.Count; i++)
-                            {
-                                if (line1Compare == readFile[i][1])
-                                {
-                                    string[] line = readFile[i];
-                                    Console.WriteLine("{0} {1} {2} {3}", line[0], line[1], line[2], line[3]);
-                                }
-
-                            }
                             Console.WriteLine();
                             Console.WriteLine("Søg efter slut dato");
+                            string end = Console.ReadLine();
+                            DateTime endDate = DateTime.ParseExact(end, format, provider);
 
-                            string line2Compare = Console.ReadLine();
-                            for (j = 0; i < readFile.Count; j++)
-                            {
-                                if (line2Compare == readFile[j][2])
-                                {
-                                    string[] line = readFile[j];
-
-                                    Console.WriteLine("{0} {1} {2} {3}", line[0], line[1], line[2], line[3]);
-                                }
-
-                            }
                             Console.WriteLine();
 
-                            Console.WriteLine("Er start datoen: {0} og slut datoen: {1}?", line1Compare, line2Compare);
+                            Console.WriteLine("Er start datoen: {0} og slut datoen: {1}?", start, end);
 
                             Console.WriteLine("Tryk 1 og enter for at gå videre");
                             Console.WriteLine("Tryk 2 og enter for at prøve igen");
@@ -113,6 +99,16 @@ namespace _1SemesterConsoleApp
                             if (choice == "1")
                                 confirm = true;
 
+                            double sum = 0D;
+                            foreach(ElectricityMeter meter in meterList)
+                            {
+                                if(meter.FromTimeDate >= startDate && meter.ToTimeDate <= endDate)
+                                {
+                                    sum += meter.Value;
+                                }
+                            }
+
+                            Console.WriteLine("Total consumption: " + sum);
                         }
 
                         
