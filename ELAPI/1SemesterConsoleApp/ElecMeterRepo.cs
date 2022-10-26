@@ -12,7 +12,7 @@ namespace _1SemesterConsoleApp
         
         public double ReadElectricityMeter (DateTime startDate, DateTime endDate)
         {
-            return ;
+            return 0;
         }
             
         

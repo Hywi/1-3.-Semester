@@ -20,6 +20,15 @@ namespace _1SemesterConsoleApp
 
         public double TotalPrice { get; set; }
 
+        public ElectricityMeter(long meterId, DateTime fromDateTime, DateTime toDateTime, double value)
+        {
+            MeterId = meterId;
+            FromTimeDate = fromDateTime;
+            ToTimeDate = toDateTime;
+            Value = value;
+
+        }
+
         public void ReadElectricityMeter()
         {
 
